@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>The Hideout</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo-modified.png">
+
+<style>
+    
+        .dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="../html/index.html">
+                    <img src="../images/logo-modified.png" alt="Starbucks">
+                </a>
+            </div>
+            <ul class="navbar-nav-left">
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><b>Cold Brews</b></button>
+                        <div class="dropdown-content">
+                          <a href="#">Vietnamese Cold Brew</a>
+                          <a href="#">Citrus Cold Brew</a>
+                          <a href="#">Vanilla Cold Brew</a>
+                        </div>
+                      </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><b>Bakery</b></button>
+                        <div class="dropdown-content">
+                          <a href="#">Corssaint</a>
+                          <a href="#">Chocolate Pastry</a>
+                          <a href="#">Coffee Pastry</a>
+                        </div>
+                      </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><b>Coffee</b></button>
+                        <div class="dropdown-content">
+                          <a href="#">Cappucino</a>
+                          <a href="#">Caffe Mocha</a>
+                          <a href="#">Vanilla Latte</a>
+                        </div>
+                      </div>
+                </li>
+                <li>
+                    <a href="#">Rewards</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+            </ul>
+            
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="https://www.google.co.in/maps/place/XIM+University/@20.1581532,85.7614684,18z/data=!4m12!1m6!3m5!1s0x3a19af103360ec8f:0x734b96dc8afdf0ef!2sXIM+University!8m2!3d20.1581154!4d85.7624501!3m4!1s0x3a19af103360ec8f:0x734b96dc8afdf0ef!8m2!3d20.1581154!4d85.7624501"
+                        target="_blank">
+                        <img src="../images/marker.svg" alt="">
+                        <span>Find a store</span>
+                    </a>
+                </li>
+                <li><button class="btn btn-dark_outline"><a href="../html/login.html">Sign Up</a></button></li>
+                <li><button class="btn btn-dark_outline"><a href="../php/index.php">Login</a></button></li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="#">Menu</a>
+            </li>
+            <li>
+                <a href="#">Rewards</a>
+            </li>
+            <li>
+                <a href="#">Gift Cards</a>
+            </li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline">Sign in</button>
+            <button class="btn btn-dark">Join now</button>
+            <div>
+                <a href="#">
+                    <img src="../images/marker.svg" alt="">
+                    <span>Find a store</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Box A -->
+
+    <section class="box box-a bg-primary text-centre py-md">
+        <div class="box-inner">
+            <h2 class="text-xl">Jingle all the way to free favorites</h2>
+            <p class="text-md">
+                Join The Hideout® Rewards for delicious deals & exclusive offers.
+            </p>
+            <p>
+                Hideout, a part of Brewd Coffee Universal Limited, is India’s
+                 favourite hangout for coffee and conversations. Popularly known as HT,
+                  we strive to provide the best experience to our guests. Our coffees are 
+                  sourced from thousands of small coffee           
+                planters, who made us who we are today and we're glad to be a part
+                 of their lives.  We opened our first cafe in 2001 at Saheed Nagar Road
+                  in Bhubaneswar – the youth and the  young at heart immediately took to 
+                  the cafe, and it continues to be one of the most happening places in the
+                   city. Hideout to the youth is a “hangout” spot where they meet people, 
+                   make conversations, and have a whole lot of fun over steaming cups of
+                    great coffee.It's been an exciting journey since then to becoming the
+                     largest organised retail cafe chain globally.";
+                
+              </p>
+            
+                
+        </div>
+    </section>
+
+    <!-- Box B -->
+
+    <section class="box box-b bg-secondary grid-col-2">
+        <img src="../images/box-b.png" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">New to the nice list</h2>
+            <p class="text-md">
+                For a nondairy twist on a holiday cookie classic, try the new Iced
+                Sugar Cookie Almondmilk Latte.
+            </p>
+            <a href="" class="btn btn-light_outline">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Box C -->
+
+    <section class="box box-c bg-secondary grid-col-2 grid-reversed">
+        <img src="../images/box-c.png" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">Merry moment</h2>
+            <p class="text-md">
+                Treat yourself to a festive Sugar Plum Cheese Danish with a nicely
+                spiced sugar-plum spread.
+            </p>
+            <a href="" class="btn btn-light_outline">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Box D -->
+
+    <section class="box box-d bg-primary grid-col-2">
+        <img src="../images/box-d.png" alt="">
+        <div class="box-text">
+            <h2 class="text-xl">The Hideout Thanksgiving Blend</h2>
+            <p class="text-md">
+                This elegant dark roast returns, showcasing flavors from some of the
+                world’s major coffee-growing regions.
+            </p>
+            <a href="" class="btn btn-light_outline">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Box E -->
+
+    <section class="box box-e bg-secondary grid-col-2 grid-reversed">
+        <img src="../images/box-e.jpg" alt="">
+        <div class="box-text">
+            <h2 class="text-md">Fighting hunger this holiday</h2>
+            <p class="text-sm">
+                Hunger is affecting millions of people across America this holiday
+                season. Join us in our commitment to hunger relief and help feed
+                neighbors in need.
+            </p>
+            <a href="" class="btn btn-light_outline">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Box F -->
+    <section class="box box-f grid-col-2">
+        <div>
+            <img src="../images/box-f1.jpg" alt="">
+            <div class="bg-extra py-lg">
+                <div class="box-text">
+                    <h2 class="text-md">Let the holiday cheer come to you</h2>
+                    <p class="text-sm">
+                        Make the moment merry. Order The Hideout® holiday favorites on Uber
+                        Eats.*
+                    </p>
+                    <a href="" class="btn btn-dark_outline">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="../images/box-f2.jpg" alt="">
+            <div class="bg-primary py-lg">
+                <div class="box-text">
+                    <h2 class="text-md">Loved Passing on Netflix?</h2>
+                    <p class="text-sm">
+                        Our new social series about film adaptations kicks off with the
+                        actors and directors who brought the book to life.
+                    </p>
+                    <a href="" class="btn btn-light_outline">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social">
+                <a href="https://spotify.com">
+                    <img src="../images/social-spotify.svg" alt="" />
+                </a>
+                <a href="https://facebook.com">
+                    <img src="../images/social-facebook.svg" alt="" />
+                </a>
+                <a href="https://pinterest.com">
+                    <img src="../images/social-pinterest.svg" alt="" />
+                </a>
+                <a href="https://instagram.com">
+                    <img src="../images/social-instagram.svg" alt="" />
+                </a>
+                <a href="https://youtube.com">
+                    <img src="../images/social-youtube.svg" alt="" />
+                </a>
+                <a href="https://twitter.com">
+                    <img src="../images/social-twitter.svg" alt="" />
+                </a>
+            </div>
+            <p>© 2021 The Hideout. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
